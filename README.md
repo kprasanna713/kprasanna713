@@ -53,9 +53,16 @@ class PrasannaKumar:
 
 ---
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="25"> Tech Stack
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="25"> My Toolkit — Animated Tech Stack Bubbles
 
 <div align="center">
+
+<!-- Animated floating bubble visualization (inspired by my 3D portfolio's physics-based tech stack) -->
+<a href="https://kprasanna713.github.io/prasanna-portfolio/">
+  <img width="100%" src="./assets/tech-stack-bubbles.svg" alt="Tech Stack Bubbles Animation"/>
+</a>
+
+<br/>
 
 ### Languages & Core
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -181,10 +188,21 @@ class PrasannaKumar:
 
 <div align="center">
 
-### Let's Connect!
+### My Portfolio — Interactive 3D Experience
+
+<!-- Animated portfolio banner mimicking the portfolio's hero section -->
+<a href="https://kprasanna713.github.io/prasanna-portfolio/">
+  <img width="100%" src="./assets/portfolio-banner.svg" alt="Portfolio Hero Animation"/>
+</a>
+
+<br/>
+
+> Built with **React** + **TypeScript** + **Three.js** + **GSAP** + **WebGL** — featuring a 3D avatar, physics-based tech bubbles, smooth scroll animations, and interactive particle effects.
+
+<br/>
 
 <a href="https://kprasanna713.github.io/prasanna-portfolio/">
-  <img src="https://img.shields.io/badge/Check_Out_My_Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
+  <img src="https://img.shields.io/badge/🚀_Launch_Interactive_Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
 </a>
 
 <br/><br/>

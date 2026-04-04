@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </linearGradient>
+    <radialGradient id="glow-center" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#1e3a5f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0a0e17" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon-glow" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#d4e5f7" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#a8c4de" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.1"/>
+    </radialGradient>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="moon-blur">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <style>
+      @keyframes moonFloat { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-5px,8px)} }
+      @keyframes starTwinkle1 { 0%,100%{opacity:0.2;r:1} 50%{opacity:1;r:1.8} }
+      @keyframes starTwinkle2 { 0%,100%{opacity:0.3;r:1.2} 50%{opacity:0.9;r:2} }
+      @keyframes lineSlide { 0%{stroke-dashoffset:300} 100%{stroke-dashoffset:0} }
+      @keyframes fadeInUp { 0%{opacity:0;transform:translateY(15px)} 100%{opacity:1;transform:translateY(0)} }
+      @keyframes textGlow { 0%,100%{fill-opacity:0.7} 50%{fill-opacity:1} }
+      @keyframes cursorBlink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
+      @keyframes borderPulse { 0%,100%{stroke-opacity:0.2} 50%{stroke-opacity:0.5} }
+      .moon { animation: moonFloat 8s ease-in-out infinite; }
+      .hero-name { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 38px; fill: #e6edf3; text-anchor: middle; letter-spacing: 2px; }
+      .hero-sub { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 16px; fill: #8b949e; text-anchor: middle; letter-spacing: 3px; text-transform: uppercase; }
+      .hero-role { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 20px; text-anchor: middle; }
+      .role-data { fill: #8b949e; }
+      .role-accent { fill: #58a6ff; }
+      .cta-text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #ffffff; text-anchor: middle; letter-spacing: 1px; }
+      .nav-text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 500; font-size: 12px; fill: #8b949e; text-anchor: middle; letter-spacing: 2px; text-transform: uppercase; }
+      .pk-logo { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; fill: #e6edf3; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" rx="16" fill="url(#bg-grad)"/>
+  <rect width="900" height="280" rx="16" fill="url(#glow-center)"/>
+
+  <!-- Blue side glow (like the portfolio) -->
+  <ellipse cx="850" cy="140" rx="120" ry="200" fill="#1a3a5f" opacity="0.15"/>
+  <ellipse cx="50" cy="140" rx="80" ry="200" fill="#1a3a5f" opacity="0.08"/>
+
+  <!-- Stars -->
+  <g>
+    <circle cx="120" cy="45" r="1" fill="#fff"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/><animate attributeName="r" values="1;1.8;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="30" r="1.2" fill="#fff"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="25" r="0.8" fill="#fff"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="680" cy="35" r="1" fill="#fff"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="50" r="1.3" fill="#fff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4.5s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="65" r="0.7" fill="#58a6ff"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="750" cy="55" r="0.9" fill="#58a6ff"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="400" cy="50" r="0.6" fill="#fff"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="45" r="1.1" fill="#fff"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="50" cy="70" r="0.8" fill="#fff"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="870" cy="80" r="0.6" fill="#58a6ff"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Moon (like in the portfolio) -->
+  <g class="moon">
+    <circle cx="155" cy="115" r="22" fill="#58a6ff" opacity="0.08" filter="url(#moon-blur)"/>
+    <circle cx="155" cy="115" r="14" fill="url(#moon-glow)"/>
+  </g>
+
+  <!-- Nav bar -->
+  <text class="pk-logo" x="40" y="28">PK</text>
+  <text class="nav-text" x="650" y="28">About</text>
+  <text class="nav-text" x="740" y="28">Work</text>
+  <text class="nav-text" x="840" y="28">Contact</text>
+
+  <!-- Hero text -->
+  <text class="hero-sub" x="450" y="100">Hello! I'm</text>
+  <text class="hero-name" x="450" y="145" filter="url(#text-glow)">PRASANNA KUMAR</text>
+  <text class="hero-role" x="450" y="180">
+    <tspan class="role-data">A Data </tspan>
+    <tspan class="role-accent" style="animation: textGlow 3s ease-in-out infinite">ANALYST</tspan>
+  </text>
+
+  <!-- CTA Button -->
+  <g>
+    <rect x="365" y="205" width="170" height="36" rx="18" fill="none" stroke="#58a6ff" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="367" y="207" width="166" height="32" rx="16" fill="#58a6ff" fill-opacity="0.1"/>
+    <text class="cta-text" x="450" y="228">VIEW PORTFOLIO</text>
+  </g>
+
+  <!-- Bottom decorative line -->
+  <line x1="100" y1="265" x2="800" y2="265" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- Corner decorations -->
+  <rect x="14" y="14" width="872" height="252" rx="12" fill="none" stroke="#30363d" stroke-width="0.5" stroke-opacity="0.3">
+    <animate attributeName="stroke-opacity" values="0.1;0.3;0.1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
